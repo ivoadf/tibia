@@ -6,12 +6,22 @@
     "battleListsOptions": {
         "0": {
             "battleListFilters": [
+                "hideKnights",
+                "hidePaladins",
+                "hideDruids",
+                "hideSorcerers",
+                "hidePlayerSummons",
+                "hideNPCs",
+                "hideNonSkulledPlayers",
+                "hidePartyMembers",
+                "hideMembersOfOwnGuild",
+                "hidePlayers"
             ],
             "battleListSortOrder": [
                 "byAgeAscending",
                 "byAgeAscending"
             ],
-            "contentHeight": 38,
+            "contentHeight": 98,
             "contentMaximized": true,
             "isPartyView": false,
             "isPrimary": true,
@@ -41,34 +51,46 @@
     },
     "containersOptions": {
         "0": {
-            "contentHeight": 158,
+            "contentHeight": 195,
+            "contentMaximized": true
+        },
+        "1": {
+            "contentHeight": 146,
+            "contentMaximized": true
+        },
+        "3": {
+            "contentHeight": 79,
+            "contentMaximized": true
+        },
+        "4": {
+            "contentHeight": 47,
             "contentMaximized": true
         }
     },
     "deoptSearchWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 243,
         "contentMaximized": true,
         "showLockerOnly": false
     },
     "huntingSessionAnalyserWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 144,
         "contentMaximized": true
     },
     "impactAnalyserWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 243,
         "contentMaximized": true
     },
     "lootAnalyserWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 38,
         "contentMaximized": true
     },
     "lootTrackerWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 226,
         "contentMaximized": true
     },
     "npcTradeOptions": {
         "allowSellingEquippedItems": false,
-        "contentHeight": 0,
+        "contentHeight": 262,
         "contentMaximized": true,
         "ignoreCapacityWhenBuying": false,
         "purchaseShoppingBagWhenBuying": false,
@@ -76,15 +98,15 @@
         "sortFieldWhenSelling": "amount"
     },
     "partyHuntAnalyserOptions": {
-        "contentHeight": 0,
+        "contentHeight": 504,
         "contentMaximized": true
     },
     "preyWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 81,
         "contentMaximized": true
     },
     "questTrackerWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 38,
         "contentMaximized": true
     },
     "sidebarPanelsMangerOptions": {
@@ -92,10 +114,10 @@
         ]
     },
     "sidebarPanelsOptions": {
-        "chaseModeEnabled": true,
-        "combatMode": 2,
+        "chaseModeEnabled": false,
+        "combatMode": 3,
         "controlButtonsVisible": true,
-        "minimapZoomLevel": 0,
+        "minimapZoomLevel": -100,
         "minimizeInventory": false
     },
     "sidebarWidgetsMangerOptions": {
@@ -103,21 +125,50 @@
         "openWidgetsOrderPerSidebar": [
             [
                 {
-                    "instance": 0,
-                    "type": "battleList"
+                    "type": "vip"
+                },
+                {
+                    "instance": 4,
+                    "type": "container"
+                },
+                {
+                    "instance": 3,
+                    "type": "container"
                 },
                 {
                     "instance": 0,
                     "type": "container"
                 },
                 {
-                    "type": "vip"
+                    "instance": 1,
+                    "type": "container"
+                }
+            ],
+            [
+                {
+                    "type": "skills"
+                },
+                {
+                    "type": "huntingSessionAnalyser"
+                },
+                {
+                    "instance": 0,
+                    "type": "battleList"
+                },
+                {
+                    "type": "prey"
+                },
+                {
+                    "type": "lootTracker"
+                },
+                {
+                    "type": "partyHuntAnalyser"
                 }
             ]
         ]
     },
     "skillsWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 227,
         "contentMaximized": true,
         "invisibleProgressBars": [
         ]
@@ -154,9 +205,9 @@
         "contentMaximized": true
     },
     "vipWidgetOptions": {
-        "contentHeight": 200,
+        "contentHeight": 79,
         "contentMaximized": true,
-        "hideOfflineVips": false,
+        "hideOfflineVips": true,
         "showGrouped": false,
         "vipSortOrder": [
         ]
